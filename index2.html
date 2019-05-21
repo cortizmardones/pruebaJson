@@ -13,9 +13,13 @@
     </div>
 
     <script>
-        var objetoJson = {"Nombre":"Carlos","Apellido":"Ortiz"} 
+        var objetoJson = {"Nombre":"Carlos","Apellido":"Mardones",
+        "render":function(){document.getElementById('contenido').innerHTML=objetoJson.Nombre + " " + objetoJson.Apellido;   
+            }
+        };
 
-        document.getElementById('contenido').innerHTML=objetoJson.Nombre + " " + objetoJson.Apellido;   
+        objetoJson.render();
+ 
     </script>
 
 </body>
