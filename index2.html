@@ -12,6 +12,14 @@
 
     </div>
 
+    <div id="contenido2">
+
+    </div>
+
+    <div id="contenido3">
+
+    </div>
+
     <script>
         var objetoJson = {"Nombre":"Carlos","Apellido":"Mardones",
         "render":function(){document.getElementById('contenido').innerHTML=objetoJson.Nombre + " " + objetoJson.Apellido;   
@@ -19,6 +27,16 @@
         };
 
         objetoJson.render();
+
+
+        var objetoJson2 = {"Personas":[
+            {"Nombre":"Edward Tejeda","edad":32},
+            {"Nombre":"Jose Bernales","edad":30}
+        ]};
+
+        document.getElementById('contenido2').innerHTML = objetoJson2.Personas[0].Nombre;
+        document.getElementById('contenido3').innerHTML = objetoJson2.Personas[1].Nombre;
+
  
     </script>
 
